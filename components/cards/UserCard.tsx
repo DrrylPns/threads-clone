@@ -21,7 +21,7 @@ const UserCard = ({
         const router = useRouter();
 
   return (
-    <article className="user-card">
+    <article className="user-card bg-dark-2 p-6 rounded-lg">
         <div className="user-card_avatar">
             <Image 
                 src={imgUrl}
@@ -30,11 +30,12 @@ const UserCard = ({
                 height={48}
                 className="rounded-full"
             />
+            
+        <div className="flex-1 text-ellipsis">
+            <h4 className="text-base-semibold text-white">{name}</h4>
+            <p className="text-small-medium text-gray-1">@{username}</p>
         </div>
 
-        <div className="flex-1 text-ellipsis">
-            <h4 className="text-base-semibold text-light-1">{name}</h4>
-            <p className="text-small-medium text-gray-1">@{username}</p>
         </div>
 
         <Button className="user-card_btn" onClick={() => router.push(`/profile/${id}`)}>
