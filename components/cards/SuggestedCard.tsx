@@ -20,13 +20,14 @@ const SuggestedCard = ({
     <div className='flex flex-col text-white my-5 '>
         <div className='flex justify-between gap-[100px]'>
             <div className='flex flex-row gap-4'>
+            <Link href={`/communities/${id}`} className='relative h-[52px] w-[52px]'>
                 <Image
                     src={imgUrl}
-                    alt='communityLogo'
-                    width={52}
-                    height={52}
-                    className='rounded-full'
+                    alt='community_logo'
+                    fill
+                    className='rounded-full object-cover'
                 />
+            </Link>
                 <div className='flex flex-col'>
                     {name}
                     <p className='text-gray-1 text-[14px]'>@{username}</p>
