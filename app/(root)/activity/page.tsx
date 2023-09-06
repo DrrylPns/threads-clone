@@ -35,7 +35,7 @@ async function Page() {
                       />
                       <p className='!text-small-regular text-light-1'>
                         <span className='mr-1 text-primary-500'>
-                          {activity.author.username}
+                          {activity.author.name}
                         </span>{" "}
                           replied to your thread
                       </p>

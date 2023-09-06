@@ -60,7 +60,7 @@ const ThreadCard = ({
 
                     <div className="flex w-full flex-col">
                         <Link href={`/profile/${author.id}`} className="w-fit">
-                            <h4 className="cursor-pointer text-base-semibold text-primary-500">{author.username}</h4>
+                            <h4 className="cursor-pointer text-base-semibold text-primary-500">{author.name}</h4>
                         </Link>
 
                         <p className="mt-2 text-small-regular text-light-2">{content}</p>
